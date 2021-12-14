@@ -4,7 +4,7 @@
 // @version      0.1
 // @description  Supprime les bons plans en page d'acceuil de JVC
 // @author       You
-// @match        https://www.jeuxvideo.com/
+// @match        https://www.jeuxvideo.com/*
 // @icon         https://www.google.com/s2/favicons?domain=jeuxvideo.com
 // @grant        none
 // ==/UserScript==
