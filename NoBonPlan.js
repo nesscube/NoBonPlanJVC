@@ -12,11 +12,13 @@
 (function() {
     'use strict';
         setTimeout(function(){
-            //BON PLANS page d'acceuil JVC
+            //Header samsung
+            [...document.getElementsByClassName("header__navLink header__navLink--lvl1")].filter(x=>x.innerText=='SAMSUNG').forEach(y=>y.parentNode.remove());
+            //BON PLANS page d'acceuil JVCg
             [...document.getElementsByClassName("card__contentType")].filter(x=>x.innerText=='NEWS BON PLAN'&&x.classList.length==4).forEach(y=>y.parentNode.parentNode.parentNode.parentNode.parentNode.remove());
             //Live feeds acceuil jvc (petits)
             [...document.getElementsByClassName("card__contentType")].filter(x=>x.innerText=='LIVE FEED'&&x.parentNode.parentNode.parentNode.parentNode.clientHeight<300).forEach(y=>y.parentNode.parentNode.parentNode.parentNode.remove());
-            //news sponsorisées
+            //news sponso
             [...document.getElementsByClassName("badge card__badge")].filter(x=>x.innerText=='Sponsorisé').forEach(y=>y.parentNode.parentNode.parentNode.parentNode.remove());
             // (grands)
             [...document.getElementsByClassName("card__contentType")].filter(x=>x.innerText=='LIVE FEED'&&x.parentNode.parentNode.parentNode.parentNode.clientHeight>300).forEach(y=>y.parentNode.parentNode.parentNode.remove());
